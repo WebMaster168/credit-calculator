@@ -92,8 +92,19 @@ function setData(newData){
         ...newData
     }
 
+    const months = data.time * 12
+    const totalAmount = data.cost - data.payment
+    const monthRate = data.selectedProgram / 12
+    const generalRate = (1 + monthRate) ** months
+    const monthPayment = (totalAmount * monthRate * generalRate)/(generalRate - 1)
+    const overPayment = monthPayment * months - totalAmount
+
+
     results = {
-        rate: data.selectedProgram
+        rate: data.selectedProgram,
+        totalAmount,
+        monthPayment,
+        overPayment
     }
     
     console.log(data)
