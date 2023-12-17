@@ -29,7 +29,7 @@ $message .= "Ежемесячный платеж: {$data['results']['monthPaymen
 $message .= "Переплата: {$data['results']['overPayment']} <br>";
 
 // Отправляем письмо и результат отправки успех/неуспех true/false записываем в $result
-$result = mail('info@mail.com', 'Заявка на ипотеку', $message);
+$result = mail('shcherbakov.illya@list.ru', 'Заявка на ипотеку', $message);
 
 // На основе успешной или не успешной отправки сообщаем SUCCESS или FAILED
 // !!! Больше никакого вывода из данного файла быть не должно
