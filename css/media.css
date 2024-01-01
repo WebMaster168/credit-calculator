@@ -1,0 +1,18 @@
+@media (max-width: 440px) {
+  .order-btn {
+    width: 100%;
+  }
+  .col-right {
+    min-width: -webkit-fill-available;
+    width: 100%;
+  }
+  .summary-item__value--bigger {
+    font-size: 20px;
+  }
+  .summary-item__value {
+    font-size: 18px;
+  }
+  .summary {
+    gap: 15px;
+  }
+}
